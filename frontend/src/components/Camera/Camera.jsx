@@ -19,7 +19,7 @@ const Camera = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data[0] != null) {
-          setLocation(`/${data[0]}`);
+          setLocation(`/search/${data[0]}`);
         }
       });
   };
@@ -35,7 +35,6 @@ const Camera = () => {
       ) : (
         <section className={styles.camera}>
           <CameraComponent
-            idealResolution={{ width: 400, height: 400 }}
             onTakePhoto={(dataUri) => {
               handlePhoto(dataUri);
             }}

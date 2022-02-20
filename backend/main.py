@@ -19,6 +19,7 @@ app = FastAPI()
 origins = [
     "http://localhost",
     "http://localhost:3000",
+    "http://localhost:4173",
 ]
 
 app.add_middleware(
@@ -42,11 +43,12 @@ class ImageSchema(BaseModel):
 
 @app.post("/")
 async def create_item(item: PlaylistSchema):
-    item = deta_db.put({"name": item.name, "url": item.url})
+    item = deta_db.put({"name": item.name, "url": item.url,
+                       "sentiment": item.sentiment})
     return {"message": "Item created successfully"}
 
 
-@app.get("/{key}")
+@app.get("/sentiment/{key}")
 async def get_item(key):
     item = deta_db.fetch({"sentiment?contains": key})
     if item:
@@ -55,7 +57,7 @@ async def get_item(key):
         raise HTTPException(status_code=404, detail="Item not found")
 
 
-@app.get("/sentiment/{key}")
+@app.get("/{key}")
 async def get_sentiment(key):
     item = deta_db.get(key)
     if item:

@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+  padding: 20px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 2em;
+}
+
+.iframe {
+  width: 80vw;
+  max-width: 600px;
+  height: 80vh;
+  max-height: 450px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.list_item {
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 2rem;
+}

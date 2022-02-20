@@ -1,5 +1,8 @@
 .header {
   padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .title {
@@ -12,4 +15,10 @@
 
 .link {
   text-decoration: none;
+}
+
+.add {
+  font-size: 1.5rem;
+  color: yellow;
+  text-shadow: -1px 1px 17px rgba(255, 255, 0, 1);
 }
