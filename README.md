@@ -1,6 +1,6 @@
 <div align="center">
 
-### Sentimentify
+# Sentimentify
 
 **_Music on demand based on your mood_**
 
@@ -15,9 +15,13 @@
 
 ## About The Project
 
-![sentimentify screenshot](https://ucarecdn.com/ea732599-55da-4125-859f-58a40a340f57/)
+![sentimentify screenshot](https://ucarecdn.com/55f8ad6e-6932-4ecb-831f-330bfc3fdbe9/)
 
-Sentimentify is a music on demand service that uses your mood to recommend music, with computer vision and machine learning we can reconize your mood and search in our database playlist that match with you.
+Sentimentify is a music on demand service that uses your mood to recommend music, with computer vision and machine learning we can reconize your mood and search in our crowsourced database a playlist that match with you.
+
+### How we use GitHub
+
+We use tecnologies like Github Actions for Continous Integration and Continous Deployment that allow us simplify our workflow and make automatic deployments of our React App and our backend hosted in a kubernetes cluster super easy in every push. Additionally we use github pages for deliver our frontend worldwide in seconds, and obviously all the advantages that git brings to development.
 
 <p align="right"><a href="#top">Back to top 🔼</a></p>
 
@@ -67,10 +71,12 @@ $ cd frontend && yarn dev
 ### Built With
 
 - JavaScript
-- [React](https://reactjs.org/)
+- [React](https://reactjs.org)
 - [Vite](https://vitejs.dev)
-- [FastApi](https://fastapi.tiangolo.com/)
+- [FastApi](https://fastapi.tiangolo.com)
 - [Deta](https://deta.sh)
+- [Linode](https://linode.com)
+- [Kubernetes](https://kubernetes.io)
 
 <p align="right"><a href="#top">Back to top 🔼</a></p>
 
