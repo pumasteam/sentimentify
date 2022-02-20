@@ -59,7 +59,7 @@ const Query = ({ mood }) => {
           <h2 className={styles.title}>More playlists</h2>
           <ul className={styles.list}>
             {data._items.map((item, index) =>
-              item.key === data._items[selected].key ? (
+              !item.key === data._items[selected].key ? (
                 <li className={styles.list_item} key={index}>
                   <a href={`https://open.spotify.com/playlist/${item.url}`}>
                     {item.name}
