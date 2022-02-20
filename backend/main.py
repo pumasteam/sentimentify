@@ -17,9 +17,7 @@ deta_db = deta.Base(deta_base)
 app = FastAPI()
 
 origins = [
-    "http://localhost",
-    "http://localhost:3000",
-    "http://localhost:4173",
+    "*"
 ]
 
 app.add_middleware(

@@ -12,7 +12,7 @@ const Add = () => {
   const onSubmit = (data) => {
     console.log(data);
     toast.promise(
-      fetch("http://localhost:8000/", {
+      fetch("https://a8f7-2600-3c02-00-f03c-93ff-fe3b-727b.ngrok.io/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

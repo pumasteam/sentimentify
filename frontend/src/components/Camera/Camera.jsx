@@ -9,7 +9,7 @@ const Camera = () => {
   const [location, setLocation] = useLocation();
 
   const handlePhoto = (dataUri) => {
-    fetch(`http://localhost:8000/get-sentiment`, {
+    fetch(`https://a8f7-2600-3c02-00-f03c-93ff-fe3b-727b.ngrok.io/get-sentiment`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
